@@ -1,0 +1,225 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StudyHub by The Silent Hawk</title>
+  <meta name="description" content="Free study materials: notes, PDFs, question banks, and cheat sheets, organized by subject and grade." />
+  <meta name="robots" content="index,follow" />
+  <!-- Replace this with your real URL once deployed -->
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/studyhub/" />
+  <!-- Replace the content value below after verifying in Google Search Console -->
+  <meta name="google-site-verification" content="PASTE_CODE_FROM_SEARCH_CONSOLE_HERE" />  <!-- Open Graph for nicer sharing -->  <meta property="og:title" content="StudyHub – Free Study Materials" />
+  <meta property="og:description" content="Download notes, PDFs, and question banks organized by subject and grade." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/studyhub/" />  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #111732;
+      --muted: #8ea0b8;
+      --text: #eaf2ff;
+      --accent: #6ee7ff;
+      --ring: rgba(110,231,255,.35);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial; background: radial-gradient(1200px 800px at 20% 0%, #121a36 0%, var(--bg) 55%), var(--bg); color: var(--text); }
+    header { position: sticky; top: 0; backdrop-filter: blur(10px); background: linear-gradient(180deg, rgba(11,16,32,.85), rgba(11,16,32,.35)); border-bottom: 1px solid rgba(255,255,255,.06); z-index: 10; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .logo { width: 38px; height: 38px; border-radius: 12px; background: linear-gradient(135deg, var(--accent), #9bffd1); box-shadow: 0 0 0 6px var(--ring) inset, 0 6px 30px rgba(110,231,255,.35); }
+    h1 { font-size: clamp(22px, 3vw, 28px); margin: 0; letter-spacing: .4px; }
+    .muted { color: var(--muted); }
+    .hero { padding: 28px 0 8px; display: grid; gap: 12px; }
+    .actions { display: grid; grid-template-columns: 1fr 220px; gap: 12px; }
+    .search { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,.08); outline: none; background: #0e1530; color: var(--text); box-shadow: 0 0 0 3px transparent; transition: box-shadow .2s, border-color .2s; }
+    .search:focus { border-color: var(--accent); box-shadow: 0 0 0 5px var(--ring); }
+    select, button, .pill { padding: 10px 12px; border-radius: 12px; border: 1px solid rgba(255,255,255,.08); background: #0f1836; color: var(--text); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; margin: 18px 0 28px; }
+    .card { background: linear-gradient(180deg, #0e1630, var(--card)); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.25); display: grid; gap: 10px; }
+    .card h3 { margin: 0; font-size: 16px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px; color: var(--muted); }
+    .tag { padding: 4px 8px; border-radius: 999px; background: rgba(255,255,255,.06); border: 1px dashed rgba(255,255,255,.12); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 12px; border-radius: 12px; border: 1px solid rgba(255,255,255,.1); text-decoration: none; color: var(--text); background: #101a3a; box-shadow: 0 6px 20px rgba(0,0,0,.25); transition: transform .15s;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .footer { color: var(--muted); font-size: 13px; border-top: 1px solid rgba(255,255,255,.06); padding-top: 16px; }
+    .empty { text-align: center; padding: 32px; color: var(--muted); border: 1px dashed rgba(255,255,255,.15); border-radius: 16px; }
+    .toolbar { display: flex; gap: 8px; flex-wrap: wrap; }
+    .pill { cursor: pointer; user-select: none; }
+    .pill.active { border-color: var(--accent); box-shadow: 0 0 0 4px var(--ring); }
+    .badge { font-size: 12px; padding: 4px 8px; border-radius: 999px; background: rgba(110,231,255,.12); border: 1px solid rgba(110,231,255,.35); color: #b7f7ff; }
+    .small { font-size: 12px; }
+    .notice { margin-top: 6px; color: var(--muted); }
+    @media (max-width: 640px) { .actions { grid-template-columns: 1fr; } }
+  </style>  <!-- Basic JSON‑LD schema to help Google understand the site -->  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "StudyHub by The Silent Hawk",
+    "url": "https://YOUR-USERNAME.github.io/studyhub/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://YOUR-USERNAME.github.io/studyhub/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script></head>
+<body>
+  <header>
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>StudyHub</h1>
+          <div class="muted small">Free notes • PDFs • Question banks</div>
+        </div>
+      </div>
+      <span class="badge" title="Completely free & open-source">Free</span>
+    </div>
+  </header>  <main class="container">
+    <section class="hero">
+      <p class="muted">Search by title, subject, grade, or tag. Add your own links (Google Drive, GitHub, etc.) inside the data below.</p>
+      <div class="actions">
+        <input id="search" class="search" type="search" placeholder="Search materials (e.g., Physics notes, Class 10, Trigonometry, PDF)" />
+        <select id="gradeFilter" title="Filter by grade/class">
+          <option value="">All Grades</option>
+          <option>Class 9</option>
+          <option>Class 10</option>
+          <option>Class 11</option>
+          <option>Class 12</option>
+          <option>College</option>
+        </select>
+      </div>
+      <div class="toolbar" id="subjectBar"></div>
+      <div class="notice small">Tip: host your files on Google Drive (Anyone with the link → Viewer) or in this GitHub repo, then paste the share link below.</div>
+    </section><section>
+  <div class="grid" id="grid"></div>
+  <div id="empty" class="empty" style="display:none;">No materials found. Try another search or clear filters.</div>
+</section>
+
+<section class="footer">
+  <div>© <span id="year"></span> The Silent Hawk • Built with pure HTML/CSS/JS • <a class="muted" href="#" onclick="alert('To change: edit index.html → head → canonical/meta tags.'); return false;">SEO meta</a></div>
+</section>
+
+  </main>  <script>
+    const materials = [
+      {
+        title: "Physics Notes – Motion in a Straight Line",
+        subject: "Physics",
+        grade: "Class 11",
+        fileType: "PDF",
+        size: "1.4 MB",
+        tags: ["kinematics", "derivations", "formulas"],
+        url: "https://drive.google.com/your-public-file-link-1"
+      },
+      {
+        title: "Chemistry Organic – Named Reactions Cheatsheet",
+        subject: "Chemistry",
+        grade: "Class 12",
+        fileType: "PDF",
+        size: "600 KB",
+        tags: ["organic", "quick revision"],
+        url: "https://drive.google.com/your-public-file-link-2"
+      },
+      {
+        title: "Maths – Trigonometry Identities Guide",
+        subject: "Maths",
+        grade: "Class 10",
+        fileType: "DOCX",
+        size: "220 KB",
+        tags: ["trigonometry", "identities", "practice"],
+        url: "https://drive.google.com/your-public-file-link-3"
+      },
+      {
+        title: "Biology – Human Digestive System Labeled Diagram",
+        subject: "Biology",
+        grade: "Class 9",
+        fileType: "PNG",
+        size: "900 KB",
+        tags: ["diagram", "digestive"],
+        url: "https://drive.google.com/your-public-file-link-4"
+      },
+      {
+        title: "Computer Science – Python Loops Worksheet",
+        subject: "Computer Science",
+        grade: "College",
+        fileType: "PDF",
+        size: "350 KB",
+        tags: ["python", "programming", "practice"],
+        url: "https://drive.google.com/your-public-file-link-5"
+      }
+    ];
+
+    // Build subject filter pills
+    const subjects = Array.from(new Set(materials.map(m => m.subject))).sort();
+    const subjectBar = document.getElementById('subjectBar');
+    let activeSubject = '';
+    function renderSubjects() {
+      subjectBar.innerHTML = '';
+      const all = document.createElement('button');
+      all.className = 'pill' + (!activeSubject ? ' active' : '');
+      all.textContent = 'All Subjects';
+      all.onclick = () => { activeSubject = ''; render(); renderSubjects(); };
+      subjectBar.appendChild(all);
+      subjects.forEach(s => {
+        const b = document.createElement('button');
+        b.className = 'pill' + (activeSubject === s ? ' active' : '');
+        b.textContent = s;
+        b.onclick = () => { activeSubject = (activeSubject === s ? '' : s); render(); renderSubjects(); };
+        subjectBar.appendChild(b);
+      });
+    }
+
+    // Render cards
+    const grid = document.getElementById('grid');
+    const empty = document.getElementById('empty');
+    const search = document.getElementById('search');
+    const gradeFilter = document.getElementById('gradeFilter');
+
+    function matches(item, q) {
+      const hay = (item.title + ' ' + item.subject + ' ' + item.grade + ' ' + item.tags.join(' ')).toLowerCase();
+      return hay.includes(q);
+    }
+
+    function render() {
+      const q = search.value.trim().toLowerCase();
+      const grade = gradeFilter.value;
+      grid.innerHTML = '';
+      const list = materials.filter(m => {
+        const okQ = !q || matches(m, q);
+        const okG = !grade || m.grade === grade;
+        const okS = !activeSubject || m.subject === activeSubject;
+        return okQ && okG && okS;
+      });
+
+      list.forEach(m => {
+        const card = document.createElement('article');
+        card.className = 'card';
+        card.innerHTML = `
+          <div class="meta">
+            <span class="tag">${m.subject}</span>
+            <span class="tag">${m.grade}</span>
+            <span class="tag">${m.fileType}${m.size ? ' • ' + m.size : ''}</span>
+          </div>
+          <h3>${m.title}</h3>
+          <div class="meta">${m.tags.map(t => `<span class='tag'>#${t}</span>`).join(' ')}</div>
+          <div style="display:flex; gap:8px;">
+            <a class="btn" href="${m.url}" target="_blank" rel="noopener">Download / View</a>
+            <a class="btn" href="${m.url}" target="_blank" rel="noopener" title="Share same link">Share</a>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      empty.style.display = list.length ? 'none' : 'block';
+    }
+
+    // Wire events
+    search.addEventListener('input', render);
+    gradeFilter.addEventListener('change', render);
+
+    // Kickoff
+    document.getElementById('year').textContent = new Date().getFullYear();
+    renderSubjects();
+    render();
+  </script></body>
+</html>
